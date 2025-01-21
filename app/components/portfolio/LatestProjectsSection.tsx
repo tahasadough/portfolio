@@ -16,7 +16,7 @@ const LatestProjectsSection = () => {
     },
     {
       title: 'Portfolio',
-      link: 'https://github.com/tahasadough/Portfolio',
+      link: 'https://github.com/tahasadough/portfolio',
       icon: <Icon.t />,
     },
     {
