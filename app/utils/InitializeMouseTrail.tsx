@@ -1,11 +1,15 @@
 'use client';
-import createMT from '@codemasters/mousetrail';
+import mouseTrail from '@codemasters/mousetrail';
+import useScreenSize from '../hooks/useScreenSize';
 import { useEffect } from 'react';
 
 const InitializeMouseTrail = () => {
+  const { width } = useScreenSize();
+
   useEffect(() => {
-    createMT();
-  }, []);
+    if (width > 768) mouseTrail();
+    else mouseTrail.distroy();
+  }, [width]);
 
   return <></>;
 };

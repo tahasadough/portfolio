@@ -13,3 +13,8 @@ export interface Project {
   title: string;
   icon: ReactNode;
 }
+
+export interface ScreenSize {
+  width: number;
+  height: number;
+}
