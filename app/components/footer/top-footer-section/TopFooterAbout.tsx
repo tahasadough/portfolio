@@ -14,9 +14,9 @@ const TopFooterAbout = () => {
         <span className='text-white'>Taha Sadough</span>
       </section>
       <p className='w-[60%] text-sm'>
-        Product designer crafting clean & modern designs
+        Software developer creating scalable applications
       </p>
-      <p>info@example.com</p>
+      <p>tahasadoughdev@gmail.com</p>
     </section>
   );
 };

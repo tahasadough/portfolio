@@ -3,9 +3,9 @@ import './globals.css';
 import { ReactNode } from 'react';
 import NavBar from './components/home/nav/navbar/NavBar';
 import Footer from './components/footer/Footer';
-import InitializeLenis from './InitializeLenis';
-import InitializeMouseTrail from './mouse-trail/InitializeMouseTrail';
-import InitializeMotion from './motion/InitializeMotion';
+import InitializeLenis from './utils/InitializeLenis';
+import InitializeMouseTrail from './utils/InitializeMouseTrail';
+import InitializeGsap from './utils/gsap/InitializeGsap';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -24,7 +24,7 @@ const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
           <Footer />
         </footer>
         <InitializeLenis />
-        <InitializeMotion />
+        <InitializeGsap />
         <InitializeMouseTrail />
       </body>
     </html>

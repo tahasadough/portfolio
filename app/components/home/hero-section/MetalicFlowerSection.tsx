@@ -15,7 +15,7 @@ const MetalicFlowerSection = () => {
             width={500}
             height={500}
             sizes='500'
-            src='metalic-flower.png'
+            src='/metalic-flower.png'
             alt='Grey-metallic-flower-shaped-object'
             className='object-cover'
           ></Image>

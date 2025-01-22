@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-
 export interface NavBarLink {
   href: string;
   name: string;
