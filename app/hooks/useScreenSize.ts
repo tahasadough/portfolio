@@ -3,11 +3,13 @@ import { ScreenSize } from '../Interfaces';
 
 const useScreenSize = () => {
   const [screenSize, setScreenSize] = useState<ScreenSize>({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
+    setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+
     const resizeEventListener = window.addEventListener('resize', () => {
       setScreenSize({ width: window.innerWidth, height: window.innerHeight });
     });
