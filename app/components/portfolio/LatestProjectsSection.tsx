@@ -6,13 +6,13 @@ const LatestProjectsSection = () => {
   const projects: Project[] = [
     {
       title: 'MouseTrail',
-      link: 'https://github.com/tahasadough/whisper',
-      icon: <Icon.whisper />,
-    },
-    {
-      title: 'MouseTrail',
       link: 'https://github.com/tahasadough/mousetrail',
       icon: <Icon.mouseTrail />,
+    },
+    {
+      title: 'Whisper',
+      link: 'https://github.com/tahasadough/whisper',
+      icon: <Icon.whisper />,
     },
     {
       title: 'Portfolio',
