@@ -16,7 +16,7 @@ const BottomFooterSection = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='bg-linear-gradient-light bg-clip-text text-center text-[50px] text-nowrap text-transparent md:text-[100px] lg:text-[130px] xl:text-[170px] 2xl:text-[185px]'
+        className='to-gray from-light-black bg-gradient-to-tr bg-clip-text text-center text-[50px] text-nowrap text-transparent md:text-[100px] lg:text-[130px] xl:text-[170px] 2xl:text-[185px]'
       >
         Taha Sadough
       </motion.h1>

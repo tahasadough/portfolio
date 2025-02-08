@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@config "../tailwind.config.ts";
 
 @theme {
   --color-black: #000000;
@@ -8,6 +7,43 @@
   --color-light-black: #333333;
   --color-gray: #999999;
   --color-white: #ffffff;
+}
+
+@layer components {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+  }
 }
 
 html {

@@ -32,9 +32,9 @@ const Contact = () => {
       <Link href='https://github.com/tahasadough' target='_blank' className=''>
         <Button center>Connect me</Button>
       </Link>
-      <div className='absolute inset-0 -z-10 h-full bg-black opacity-85'></div>
-      <div className='bg-linear-gradient absolute -top-28 left-0 h-[40%] w-full blur-3xl'></div>
-      <div className='bg-linear-gradient absolute bottom-0 left-0 h-[40%] w-full blur-3xl'></div>
+      <div className='absolute inset-0 -z-10 h-full bg-black opacity-90'></div>
+      <div className='from-almost-black absolute -top-20 left-0 h-[40%] w-full bg-gradient-to-br to-black blur-3xl'></div>
+      <div className='from-almost-black absolute top-98 bottom-0 left-0 h-[40%] w-full bg-gradient-to-br to-black blur-3xl'></div>
 
       <Image
         src='/metalic-shape-background.png'

@@ -19,11 +19,11 @@ const MetalicFlowerSection = () => {
             alt='Grey-metallic-flower-shaped-object'
             className='object-cover'
           ></Image>
-          <div className='absolute top-0 -z-50 w-full rounded-full bg-white py-64 opacity-[0.1] blur-3xl'></div>
+          <div className='absolute top-0 -z-50 w-full rounded-full bg-white py-64 opacity-10 blur-3xl'></div>
         </motion.section>
       </div>
-      <div className='absolute top-[40%] z-50 h-[400px] w-full bg-black opacity-55 blur-3xl'></div>
-      <div className='absolute top-[80%] z-50 h-[400px] w-full bg-black blur-3xl'></div>
+      <div className='from-almost-black absolute top-[40%] z-50 h-[400px] w-full bg-gradient-to-tr to-black opacity-75 blur-3xl'></div>
+      <div className='from-almost-black absolute top-[80%] z-50 h-[400px] w-full bg-gradient-to-tr to-black blur-3xl'></div>
     </section>
   );
 };
