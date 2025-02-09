@@ -29,7 +29,7 @@ const Contact = () => {
       >
         Let&apos;s start ASAP.
       </motion.p>
-      <Link href='https://github.com/tahasadough' target='_blank' className=''>
+      <Link href='https://github.com/tahasadough' target='_blank'>
         <Button center>Connect me</Button>
       </Link>
       <div className='absolute inset-0 -z-10 h-full bg-black opacity-90'></div>

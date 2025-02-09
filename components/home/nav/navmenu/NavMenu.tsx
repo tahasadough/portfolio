@@ -33,7 +33,7 @@ const NavMenu = ({ setIsToggled }: Props) => {
       navMenuNode.removeEventListener('click', navMenuClickEventListener!);
   }, [setIsToggled]);
 
-  const linkStyles = 'hover:text-[--gray] transition-all duration-500';
+  const linkStyles = 'hover:text-gray transition-all duration-500';
   return (
     <motion.div
       ref={navMenuRef}
@@ -41,15 +41,15 @@ const NavMenu = ({ setIsToggled }: Props) => {
       animate={{ height: 'auto' }}
       exit={{ height: 0 }}
       transition={{ duration: 0.4 }}
-      className='fixed right-0 top-0 -z-10 w-full border-b border-[--light-black] bg-[--almost-black]'
+      className='border-light-black bg-almost-black fixed top-0 right-0 -z-10 w-full border-b'
     >
-      <section className='space-y-8 px-5 pb-10 pt-16 text-lg'>
+      <section className='space-y-8 px-5 pt-16 pb-10 text-lg'>
         <motion.div
           initial={{ scale: 0.5 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.4 }}
           exit={{ scale: 0.5, opacity: 0 }}
-          className='border-t-2 border-[--light-black] p-1'
+          className='border-light-black border-t-2 p-1'
         ></motion.div>
         {links.map((link, i) => (
           <motion.div
