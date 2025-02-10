@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ReactNode } from 'react';
-import NavBar from '@/components/home/nav/navbar/NavBar';
+import NavBar from '@/components/nav/navbar/NavBar';
 import Footer from '@/components/footer/Footer';
 import InitializeLenis from '@/utils/InitializeLenis';
 import InitializeMouseTrail from '@/utils/InitializeMouseTrail';
