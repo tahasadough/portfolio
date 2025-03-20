@@ -1,4 +1,4 @@
-export const watch = () => {
+const watch = () => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'>
       <path
@@ -9,7 +9,7 @@ export const watch = () => {
   );
 };
 
-export const chat = () => {
+const chat = () => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' fill='none'>
       <g fill='#fff' clipPath='url(#a)'>
@@ -25,7 +25,7 @@ export const chat = () => {
   );
 };
 
-export const search = () => {
+const search = () => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24' fill='none'>
       <g clipPath='url(#a)'>
@@ -43,7 +43,7 @@ export const search = () => {
   );
 };
 
-export const whisper = () => {
+const whisper = () => {
   return (
     <svg
       id='logo-71'
@@ -64,7 +64,7 @@ export const whisper = () => {
   );
 };
 
-export const mouseTrail = () => {
+const mouseTrail = () => {
   return (
     <svg
       id='logo-83'
@@ -95,7 +95,7 @@ export const mouseTrail = () => {
   );
 };
 
-export const t = () => {
+const t = () => {
   return (
     <svg
       fill='#3064E8'
@@ -118,3 +118,5 @@ export const t = () => {
     </svg>
   );
 };
+
+export { watch, chat, search, whisper, mouseTrail, t };

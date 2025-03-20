@@ -1,19 +1,5 @@
-import {
-  chat,
-  mouseTrail,
-  search,
-  t,
-  watch,
-  whisper,
-} from '../components/Icons';
+import * as Icons from '../components/Icons';
 
-const Icon = {
-  watch,
-  chat,
-  search,
-  whisper,
-  mouseTrail,
-  t,
-};
+const Icon = Icons;
 
 export default Icon;
