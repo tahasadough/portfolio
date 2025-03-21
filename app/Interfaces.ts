@@ -1,20 +1,17 @@
 import { ReactNode } from 'react';
-export interface NavBarLink {
+interface NavBarLink {
   href: string;
   name: string;
 }
 
-export interface FooterLink extends NavBarLink {
+interface FooterLink extends NavBarLink {
   target?: '_blank';
 }
 
-export interface Project {
+interface Project {
   link: string;
   title: string;
   icon: ReactNode;
 }
 
-export interface ScreenSize {
-  width: number;
-  height: number;
-}
+export type { NavBarLink, FooterLink, Project };
