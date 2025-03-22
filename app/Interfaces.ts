@@ -11,7 +11,7 @@ interface FooterLink extends NavBarLink {
 interface Project {
   link: string;
   title: string;
-  icon: ReactNode;
+  icon?: ReactNode;
 }
 
 export type { NavBarLink, FooterLink, Project };

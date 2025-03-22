@@ -64,7 +64,7 @@ const whisper = () => {
   );
 };
 
-const mouseTrail = () => {
+const spicyHooks = () => {
   return (
     <svg
       id='logo-83'
@@ -119,4 +119,4 @@ const t = () => {
   );
 };
 
-export { watch, chat, search, whisper, mouseTrail, t };
+export { watch, chat, search, whisper, spicyHooks, t };

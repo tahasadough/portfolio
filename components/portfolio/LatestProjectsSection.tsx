@@ -5,9 +5,9 @@ import Icon from '@/utils/Icon';
 const LatestProjectsSection = () => {
   const projects: Project[] = [
     {
-      title: 'MouseTrail',
-      link: 'https://github.com/tahasadough/mousetrail',
-      icon: <Icon.mouseTrail />,
+      title: 'SpicyHooks',
+      link: 'https://github.com/tahasadough/spicyhooks',
+      icon: <Icon.spicyHooks />,
     },
     {
       title: 'Whisper',
@@ -20,9 +20,8 @@ const LatestProjectsSection = () => {
       icon: <Icon.t />,
     },
     {
-      title: 'MoreDs',
-      link: 'https://github.com/tahasadough/moreds',
-      icon: '',
+      title: 'MouseTrail',
+      link: 'https://github.com/tahasadough/mousetrail',
     },
   ];
   return (
