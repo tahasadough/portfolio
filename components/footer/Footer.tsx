@@ -1,14 +1,14 @@
-import BottomFooterSection from './BottomFooterSection';
-import TopFooterSection from './top-footer-section/TopFooterSection';
+import BottomFooter from './_components/bottom-footer/BottomFooter';
+import TopFooterSection from './_components/top-footer/TopFooterSection';
 
-const Footer = () => {
+function Footer() {
   return (
     <section className='pt-16 pb-12'>
       <TopFooterSection />
       <div className='bg-light-black my-10 h-[1px]'></div>
-      <BottomFooterSection />
+      <BottomFooter />
     </section>
   );
-};
+}
 
 export default Footer;

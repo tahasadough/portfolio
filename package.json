@@ -11,19 +11,21 @@
   "dependencies": {
     "@codemasters/mousetrail": "^1.5.0",
     "@codemasters/whisper": "^1.5.2",
-    "@gsap/react": "^2.1.2",
     "@tailwindcss/postcss": "^4.0.0",
     "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
-    "gsap": "^3.12.7",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "hamburger-react": "^2.5.2",
     "lenis": "^1.1.19",
     "motion": "12.0.0-alpha.2",
-    "next": "^15.1.6",
+    "next": "^15.2.4",
     "node": "^23.5.0",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "spicyhooks": "^0.1.11",
+    "tailwind-merge": "^3.1.0"
   },
   "devDependencies": {
     "typescript": "^5.7.3",
