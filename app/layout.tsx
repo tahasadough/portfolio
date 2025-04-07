@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ReactNode } from 'react';
-import LenisProvider from '@/components/providers/lenis/LenisProvider';
-import MouseTrailProvider from '@/components/providers/MouseTrailProvider';
-import GsapProvider from '@/components/providers/GsapProvider';
+import LenisProvider from '@/providers/lenis/LenisProvider';
+import MouseTrailProvider from '@/providers/MouseTrailProvider';
+import GsapProvider from '@/providers/GsapProvider';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
