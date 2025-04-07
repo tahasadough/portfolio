@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ReactNode } from 'react';
 import LenisProvider from '@/components/providers/lenis/LenisProvider';
-import MouseTrailProvider from '@/components/providers/mouse-trail/MouseTrailProvider';
+import MouseTrailProvider from '@/components/providers/MouseTrailProvider';
+import GsapProvider from '@/components/providers/GsapProvider';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -14,7 +15,9 @@ function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
     <html lang='en' className='overflow-x-hidden md:overflow-auto'>
       <body className='overflow-x-hidden bg-black text-white antialiased select-none md:overflow-auto'>
         <LenisProvider>
-          <MouseTrailProvider>{children}</MouseTrailProvider>
+          <GsapProvider>
+            <MouseTrailProvider>{children}</MouseTrailProvider>
+          </GsapProvider>
         </LenisProvider>
       </body>
     </html>
