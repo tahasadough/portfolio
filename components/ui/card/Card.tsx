@@ -11,11 +11,11 @@ function ProjectCard({ logo, title, href }: ProjectCardProps) {
   return (
     <Link href={href as string} target='_blank'>
       <motion.section
-        initial={{ scale: 0.75, opacity: 0 }}
+        initial={{ scale: 0.75 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className='group relative'
+        className='group relative opacity-0'
       >
         <div className='border-light-black bg-almost-black flex h-[300px] w-full transform items-center justify-center overflow-hidden rounded-2xl border shadow-md backdrop-blur-sm backdrop-filter transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-gray-700 hover:shadow-lg'>
           {logo}
@@ -29,11 +29,11 @@ function ProjectCard({ logo, title, href }: ProjectCardProps) {
 function WhyMeCard({ icon, title, children }: WhyMeCardProps) {
   return (
     <motion.div
-      initial={{ scale: 0.75, opacity: 0 }}
+      initial={{ scale: 0.75 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className='border-light-black bg-almost-black rounded-2xl border px-8 py-10'
+      className='border-light-black bg-almost-black rounded-2xl border px-8 py-10 opacity-0'
     >
       <section className='space-y-6'>
         <IconWrapperCard icon={icon} />

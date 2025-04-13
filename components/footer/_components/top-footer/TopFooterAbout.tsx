@@ -5,7 +5,7 @@ function TopFooterAbout() {
     <section className='space-y-3'>
       <section className='space-x-2'>
         <Image
-          src='taha-sadough.webp'
+          src='/taha-sadough.webp'
           width={25}
           height={25}
           alt='profile-image'

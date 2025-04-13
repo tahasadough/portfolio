@@ -5,13 +5,9 @@ import { HeroSectionAnimations } from '@/app/(main)/_components/hero-section/_gs
 import { ScrollTrigger } from 'gsap/all';
 import { ReactNode } from 'react';
 
-interface Props {
-  children: ReactNode;
-}
-
 gsap.registerPlugin(ScrollTrigger);
 
-function GsapProvider({ children }: Props) {
+function GsapProvider({ children }: Readonly<{ children: ReactNode }>) {
   useGSAP(() => {
     HeroSectionAnimations();
   }, []);

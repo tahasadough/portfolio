@@ -2,11 +2,7 @@ import Footer from '@/components/footer/Footer';
 import NavBar from '@/components/nav/_components/navbar/NavBar';
 import { ReactNode } from 'react';
 
-interface Props {
-  children: ReactNode;
-}
-
-function MainLayout({ children }: Readonly<Props>) {
+function MainLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <>
       <header className='lg:container'>

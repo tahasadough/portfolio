@@ -6,16 +6,17 @@ function HeroMetalicFlowerSection() {
     <section className='relative -z-50 shadow-2xl'>
       <div id='metalic-flower-wrapper'>
         <motion.section
-          initial={{ rotate: -65, y: 30, scale: 0.75, opacity: 0 }}
+          initial={{ rotate: -65, y: 30 }}
           animate={{ y: 0, rotate: 0, scale: 1, opacity: 1 }}
           transition={{ duration: 1.5 }}
+          className='opacity-0'
         >
           <Image
             decoding='async'
             width={500}
             height={500}
             sizes='500'
-            src='/metalic-flower.png'
+            src='/metalic-flower.webp'
             alt='Grey-metallic-flower-shaped-object'
             className='object-cover'
           ></Image>

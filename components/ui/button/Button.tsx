@@ -6,12 +6,12 @@ import * as motion from 'motion/react-client';
 function Button({ children, variant, size }: CvaBaseComponentProps) {
   return (
     <motion.button
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       whileHover={{ backgroundColor: '#ffffff', color: '#000000' }}
       viewport={{ once: true }}
-      className={cn(BUTTON_VARIANTS({ variant, size }))}
+      className={cn(BUTTON_VARIANTS({ variant, size }), 'opacity-0')}
     >
       {children}
     </motion.button>

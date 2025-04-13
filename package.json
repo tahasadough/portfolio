@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@codemasters/mousetrail": "^1.5.0",
-    "@codemasters/whisper": "^1.5.2",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/postcss": "^4.0.0",
     "babel-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",

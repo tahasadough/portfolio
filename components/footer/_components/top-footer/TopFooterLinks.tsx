@@ -3,7 +3,7 @@ import { FOOTER_LINKS } from '../../_utils/footer.constants';
 
 function TopFooterLinks() {
   return (
-    <section className='grid grid-cols-2 gap-2 text-sm'>
+    <section className='z-10 grid grid-cols-2 gap-2 text-sm'>
       {FOOTER_LINKS.map((link, i) => (
         <Link key={i} href={link.href} target={link.target}>
           {link.name}
