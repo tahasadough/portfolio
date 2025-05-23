@@ -1,7 +1,7 @@
 import About from './_components/about/About';
 import Contact from './_components/contact/Contact';
 import HeroSection from './_components/hero-section/HeroSection';
-import Portfolio from './_components/portfolio/Portfolio';
+// import Portfolio from './_components/portfolio/Portfolio';
 import WhyMe from './_components/why-me/WhyMe';
 
 function HomePage() {
@@ -9,7 +9,7 @@ function HomePage() {
     <>
       <section className='container'>
         <HeroSection />
-        <Portfolio />
+        {/* <Portfolio /> */}
         <About />
         <WhyMe />
       </section>

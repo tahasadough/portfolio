@@ -1,21 +1,15 @@
 'use client';
 import mouseTrail from '@codemasters/mousetrail';
-import { useEffect, ReactNode } from 'react';
+import { useEffect, PropsWithChildren } from 'react';
 import { useScreenSize } from 'spicyhooks';
 
-interface Props {
-  children: ReactNode;
-}
-
-function MouseTrailProvider({ children }: Props) {
-  const { screenWidth } = useScreenSize();
+export default function MouseTrailProvider({ children }: PropsWithChildren) {
+  const { width } = useScreenSize();
 
   useEffect(() => {
-    if (screenWidth > 768) mouseTrail();
+    if (width > 768) mouseTrail();
     else mouseTrail.distroy();
-  }, [screenWidth]);
+  }, [width]);
 
   return <>{children}</>;
 }
-
-export default MouseTrailProvider;

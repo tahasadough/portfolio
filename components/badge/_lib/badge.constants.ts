@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-const BADGE_VARIANTS = cva('badge', {
+export const BADGE_VARIANTS = cva('badge', {
   variants: {
     color: {
       default: 'bg-lighter-black',
@@ -25,5 +25,3 @@ const BADGE_VARIANTS = cva('badge', {
     rounded: 'default',
   },
 });
-
-export { BADGE_VARIANTS };

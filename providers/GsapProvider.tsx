@@ -7,12 +7,12 @@ import { ReactNode } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function GsapProvider({ children }: Readonly<{ children: ReactNode }>) {
+export default function GsapProvider({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   useGSAP(() => {
     HeroSectionAnimations();
   }, []);
 
   return <>{children}</>;
 }
-
-export default GsapProvider;

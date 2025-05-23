@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-function HeroSectionAnimations() {
+export function HeroSectionAnimations() {
   gsap.to('#metalic-flower-wrapper', {
     scrollTrigger: {
       trigger: '#metalic-flower-wrapper',
@@ -12,5 +12,3 @@ function HeroSectionAnimations() {
     rotate: 45,
   });
 }
-
-export { HeroSectionAnimations };

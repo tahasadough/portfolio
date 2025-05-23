@@ -1,24 +1,19 @@
-import Image from 'next/image';
+import GitHubLink from '@/components/github-link/GithubLink';
+import Link from 'next/link';
 
-function TopFooterAbout() {
+export default function TopFooterAbout() {
   return (
     <section className='space-y-3'>
-      <section className='space-x-2'>
-        <Image
-          src='/taha-sadough.webp'
-          width={25}
-          height={25}
-          alt='profile-image'
-          className='inline rounded-full object-cover'
-        />
-        <span className='text-white'>Taha Sadough</span>
-      </section>
+      <GitHubLink />
       <p className='w-[60%] text-sm'>
-        Software developer creating scalable applications
+        Software Engineer | Developing High-Performance & Scalable Applications
       </p>
-      <p>tahasadoughdev@gmail.com</p>
+      <Link
+        href='mailto:tsadough.eng@gmail.com'
+        className='hover:text-gray transition-all duration-500'
+      >
+        tsadough.eng@gmail.com
+      </Link>
     </section>
   );
 }
-
-export default TopFooterAbout;

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import NavMenu from '../NavMenu';
 import { AnimatePresence } from 'motion/react';
 
-function NavMenuToggler() {
+export default function NavMenuToggler() {
   const [isToggled, setIsToggled] = useState(false);
 
   return (
@@ -16,5 +16,3 @@ function NavMenuToggler() {
     </section>
   );
 }
-
-export default NavMenuToggler;

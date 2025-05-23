@@ -3,7 +3,7 @@ import Button from '@/components/ui/button/Button';
 import * as motion from 'motion/react-client';
 import Link from 'next/link';
 
-function HeroIntro() {
+export default function HeroIntro() {
   return (
     <motion.section
       initial={{ y: 30, opacity: 0 }}
@@ -12,9 +12,11 @@ function HeroIntro() {
       className='flex flex-col items-center justify-center gap-9'
     >
       <Badge>Hello,I&apos;m Taha 👋</Badge>
-      <h1 className='text-center text-[2rem] leading-none sm:text-[3rem] md:text-[4rem] lg:text-[5rem]'>
-        Software Developer{' '}
-        <span className='text-[--gray]'>creating scalable applications</span>
+      <h1 className='text-center text-[2rem] leading-none sm:text-[3rem] md:text-[4rem] lg:text-[4.3rem]'>
+        Software Engineer{' '}
+        <span className='text-[--gray]'>
+          Developing High-Performance & Scalable Applications
+        </span>
       </h1>
       <div className='flex justify-center'>
         <Link
@@ -28,5 +30,3 @@ function HeroIntro() {
     </motion.section>
   );
 }
-
-export default HeroIntro;

@@ -1,9 +1,13 @@
-import { cn } from '@/lib/utils/common/cn';
-import { CvaBaseComponentProps } from '@/lib/utils/common/common.interface';
-import { BUTTON_VARIANTS } from './_utils/button.constants';
+import { cn } from '@/lib/utils/cn';
+import { CvaBaseComponentProps } from '@/lib/types/common.type';
+import { BUTTON_VARIANTS } from './_lib/button.constants';
 import * as motion from 'motion/react-client';
 
-function Button({ children, variant, size }: CvaBaseComponentProps) {
+export default function Button({
+  children,
+  variant,
+  size,
+}: CvaBaseComponentProps) {
   return (
     <motion.button
       initial={{ y: 30 }}
@@ -17,5 +21,3 @@ function Button({ children, variant, size }: CvaBaseComponentProps) {
     </motion.button>
   );
 }
-
-export default Button;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import * as motion from 'motion/react-client';
 
-function AboutImage() {
+export default function AboutImage() {
   return (
     <section className='flex sm:w-[70%] md:w-[60%] xl:w-[90%]'>
       <motion.div
@@ -32,5 +32,3 @@ function AboutImage() {
     </section>
   );
 }
-
-export default AboutImage;

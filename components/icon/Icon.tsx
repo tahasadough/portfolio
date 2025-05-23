@@ -1,3 +1,5 @@
+export default function Icon() {}
+
 function Watch() {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'>
@@ -119,15 +121,9 @@ function T() {
   );
 }
 
-function Icon() {
-  return;
-}
-
 Icon.Watch = Watch;
 Icon.Chat = Chat;
 Icon.Search = Search;
 Icon.Whisper = Whisper;
 Icon.SpicyHooks = SpicyHooks;
 Icon.T = T;
-
-export default Icon;

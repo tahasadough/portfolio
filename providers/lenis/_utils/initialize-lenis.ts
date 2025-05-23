@@ -1,7 +1,7 @@
 import Lenis from 'lenis';
 import { LenisOptions } from 'lenis';
 
-function InitializeLenis(options: LenisOptions) {
+export function InitializeLenis(options: LenisOptions) {
   const lenis = new Lenis(options);
 
   const raf = (time: number) => {
@@ -13,5 +13,3 @@ function InitializeLenis(options: LenisOptions) {
 
   return lenis;
 }
-
-export { InitializeLenis };

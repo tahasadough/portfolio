@@ -1,8 +1,8 @@
 'use client';
 import { ReactNode, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { DEFAULT_OPTIONS } from './_utils/lenis.constants';
-import { InitializeLenis } from './_utils/lenis.helpers';
+import { DEFAULT_OPTIONS } from './_lib/lenis.constants';
+import { InitializeLenis } from './_utils/initialize-lenis';
 import { LenisOptions } from 'lenis';
 
 interface Props {
@@ -10,7 +10,10 @@ interface Props {
   options?: LenisOptions;
 }
 
-function LenisProvider({ children, options = DEFAULT_OPTIONS }: Props) {
+export default function LenisProvider({
+  children,
+  options = DEFAULT_OPTIONS,
+}: Props) {
   const pathname = usePathname();
 
   useEffect(() => {
@@ -27,5 +30,3 @@ function LenisProvider({ children, options = DEFAULT_OPTIONS }: Props) {
 
   return <>{children}</>;
 }
-
-export default LenisProvider;

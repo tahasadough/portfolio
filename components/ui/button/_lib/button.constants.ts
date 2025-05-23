@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-const BUTTON_VARIANTS = cva('button', {
+export const BUTTON_VARIANTS = cva('button', {
   variants: {
     variant: {
       default: 'bg-almost-black',
@@ -17,5 +17,3 @@ const BUTTON_VARIANTS = cva('button', {
     size: 'default',
   },
 });
-
-export { BUTTON_VARIANTS };

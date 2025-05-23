@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import * as motion from 'motion/react-client';
 
-function Contact() {
+export default function Contact() {
   return (
     <section
       id='contact'
-      className='relative flex flex-col items-center justify-center gap-7 py-40'
+      className='relative flex flex-col items-center justify-center gap-7 py-45'
     >
       <Badge>Contact</Badge>
       <motion.h2
@@ -29,7 +29,11 @@ function Contact() {
       >
         Let&apos;s start ASAP.
       </motion.p>
-      <Link href='https://github.com/tahasadough' target='_blank'>
+      <Link
+        href='https://github.com/tahasadough'
+        target='_blank'
+        className='z-50'
+      >
         <Button variant='outline'>Connect me</Button>
       </Link>
       <div className='absolute inset-0 -z-10 h-full bg-black opacity-90'></div>
@@ -47,5 +51,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

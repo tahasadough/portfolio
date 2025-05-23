@@ -2,7 +2,9 @@ import Footer from '@/components/footer/Footer';
 import NavBar from '@/components/nav/_components/navbar/NavBar';
 import { ReactNode } from 'react';
 
-function MainLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function MainLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <>
       <header className='lg:container'>
@@ -15,5 +17,3 @@ function MainLayout({ children }: Readonly<{ children: ReactNode }>) {
     </>
   );
 }
-
-export default MainLayout;

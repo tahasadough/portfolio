@@ -1,6 +1,6 @@
 import * as motion from 'motion/react-client';
 
-function BottomFooter() {
+export default function BottomFooter() {
   return (
     <section className='h-[50%]'>
       <section className='text-gray flex flex-col space-y-5 text-sm md:flex-row md:justify-between md:space-y-0'>
@@ -22,5 +22,3 @@ function BottomFooter() {
     </section>
   );
 }
-
-export default BottomFooter;

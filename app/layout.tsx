@@ -6,11 +6,13 @@ import MouseTrailProvider from '@/providers/MouseTrailProvider';
 import GsapProvider from '@/providers/GsapProvider';
 
 export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: "Taha Sadough's Portfolio",
+  title: 'Taha Sadough',
+  description: 'Developing High-Performance & Scalable Applications',
 };
 
-function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang='en' className='overflow-x-hidden md:overflow-auto'>
       <body className='overflow-x-hidden bg-black text-white antialiased select-none md:overflow-auto'>
@@ -24,5 +26,4 @@ function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   );
 }
 
-// Base UI & UX by a framer template (proxio template) (some sections) and frontend by me
-export default RootLayout;
+// Base UI & UX by a template (proxio template) (some sections)

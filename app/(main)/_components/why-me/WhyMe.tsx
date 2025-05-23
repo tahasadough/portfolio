@@ -3,7 +3,7 @@ import Badge from '@/components/badge/Badge';
 import Card from '@/components/ui/card/Card';
 import * as motion from 'motion/react-client';
 
-function WhyMe() {
+export default function WhyMe() {
   return (
     <section className='flex flex-col items-center justify-center gap-10 py-24'>
       <Badge>Why me?</Badge>
@@ -34,5 +34,3 @@ function WhyMe() {
     </section>
   );
 }
-
-export default WhyMe;

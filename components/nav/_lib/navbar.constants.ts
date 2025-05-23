@@ -1,9 +1,6 @@
 import { NavBarLink } from './navbar.types';
 
-const NAV_LINKS: NavBarLink[] = [
-  { href: '#portfolio', name: 'Portfolio' },
+export const NAV_LINKS: NavBarLink[] = [
   { href: '#about', name: 'About' },
   { href: '#contact', name: 'Contact' },
 ];
-
-export { NAV_LINKS };

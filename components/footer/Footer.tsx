@@ -1,7 +1,7 @@
 import BottomFooter from './_components/bottom-footer/BottomFooter';
 import TopFooterSection from './_components/top-footer/TopFooterSection';
 
-function Footer() {
+export default function Footer() {
   return (
     <section className='pt-16 pb-12'>
       <TopFooterSection />
@@ -10,5 +10,3 @@ function Footer() {
     </section>
   );
 }
-
-export default Footer;

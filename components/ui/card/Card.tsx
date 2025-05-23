@@ -1,13 +1,24 @@
 import * as motion from 'motion/react-client';
 import Link from 'next/link';
 import IconWrapperCard from '@/components/ui/icon-wrapper/IconWrapper';
-import { ProjectCardProps, WhyMeCardProps } from './_utils/card.interfaces';
+import { ReactNode } from 'react';
 
-function Card() {
-  return;
+interface CardProps {
+  className?: string;
+  children: ReactNode;
+  icon?: ReactNode;
 }
 
-function ProjectCard({ logo, title, href }: ProjectCardProps) {
+interface ProjectCardProps extends CardProps {
+  href?: string;
+}
+interface WhyMeCardProps extends CardProps {
+  title: string;
+}
+
+export default function Card() {}
+
+function ProjectCard({ icon, href, children }: ProjectCardProps) {
   return (
     <Link href={href as string} target='_blank'>
       <motion.section
@@ -18,9 +29,9 @@ function ProjectCard({ logo, title, href }: ProjectCardProps) {
         className='group relative opacity-0'
       >
         <div className='border-light-black bg-almost-black flex h-[300px] w-full transform items-center justify-center overflow-hidden rounded-2xl border shadow-md backdrop-blur-sm backdrop-filter transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-gray-700 hover:shadow-lg'>
-          {logo}
+          {icon}
         </div>
-        <h3 className='py-5 text-[20px]'>{title}</h3>
+        <h3 className='py-5 text-[20px]'>{children}</h3>
       </motion.section>
     </Link>
   );
@@ -46,5 +57,3 @@ function WhyMeCard({ icon, title, children }: WhyMeCardProps) {
 
 Card.Project = ProjectCard;
 Card.WhyMe = WhyMeCard;
-
-export default Card;

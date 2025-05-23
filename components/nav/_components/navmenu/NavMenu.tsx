@@ -1,13 +1,13 @@
 import * as motion from 'motion/react-client';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import { NAV_LINKS } from '../../_utils/navbar.constants';
+import { NAV_LINKS } from '../../_lib/navbar.constants';
 
 interface Props {
   setIsToggled: (value: boolean) => void;
 }
 
-function NavMenu({ setIsToggled }: Props) {
+export default function NavMenu({ setIsToggled }: Props) {
   const navMenuRef = useRef(null);
 
   useEffect(() => {
@@ -66,5 +66,3 @@ function NavMenu({ setIsToggled }: Props) {
     </motion.div>
   );
 }
-
-export default NavMenu;
